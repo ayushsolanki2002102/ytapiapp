@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		58AAB5B72D1D2A45005E0DF7 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58AAB5B62D1D2A45005E0DF7 /* Config.xcconfig */; };
+		58AAB5BE2D1D7790005E0DF7 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58AAB5BD2D1D7790005E0DF7 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AAB5BE2D1D7790005E0DF7 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +133,7 @@
 			);
 			name = ytapiapp;
 			packageProductDependencies = (
+				58AAB5BD2D1D7790005E0DF7 /* YouTubePlayerKit */,
 			);
 			productName = ytapiapp;
 			productReference = 58B72CB22D19767A004ED6DE /* ytapiapp.app */;
@@ -214,6 +217,9 @@
 			);
 			mainGroup = 58B72CA92D19767A004ED6DE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				58AAB5BC2D1D75BB005E0DF7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 58B72CB32D19767A004ED6DE /* Products */;
 			projectDirPath = "";
@@ -576,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58AAB5BC2D1D75BB005E0DF7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/YouTubePlayerKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58AAB5BD2D1D7790005E0DF7 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58AAB5BC2D1D75BB005E0DF7 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B72CAA2D19767A004ED6DE /* Project object */;
 }
