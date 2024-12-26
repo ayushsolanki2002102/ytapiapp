@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		58AAB5B72D1D2A45005E0DF7 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 58AAB5B62D1D2A45005E0DF7 /* Config.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		58B72CC32D19767E004ED6DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		58AAB5B62D1D2A45005E0DF7 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		58B72CB22D19767A004ED6DE /* ytapiapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ytapiapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B72CC22D19767E004ED6DE /* ytapiappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ytapiappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B72CCC2D19767E004ED6DE /* ytapiappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ytapiappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +96,7 @@
 				58B72CB42D19767A004ED6DE /* ytapiapp */,
 				58B72CC52D19767E004ED6DE /* ytapiappTests */,
 				58B72CCF2D19767E004ED6DE /* ytapiappUITests */,
+				58AAB5B62D1D2A45005E0DF7 /* Config.xcconfig */,
 				58B72CB32D19767A004ED6DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AAB5B72D1D2A45005E0DF7 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +291,7 @@
 /* Begin XCBuildConfiguration section */
 		58B72CD42D19767E004ED6DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = 58B72CB42D19767A004ED6DE /* ytapiapp */;
-			baseConfigurationReferenceRelativePath = Config.xcconfig;
+			baseConfigurationReference = 58AAB5B62D1D2A45005E0DF7 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -349,8 +355,7 @@
 		};
 		58B72CD52D19767E004ED6DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReferenceAnchor = 58B72CB42D19767A004ED6DE /* ytapiapp */;
-			baseConfigurationReferenceRelativePath = Config.xcconfig;
+			baseConfigurationReference = 58AAB5B62D1D2A45005E0DF7 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
