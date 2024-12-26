@@ -19,7 +19,7 @@ struct DataService {
         }
         
         // create the url
-        let urlString = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLMRqhzcHGw1b7HFep9bJFc-a2a_1IustP&key=\(apiKey!)"
+        let urlString = "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=PLMRqhzcHGw1b7HFep9bJFc-a2a_1IustP&maxResults=20&key=\(apiKey!)"
         let url = URL(string: urlString)
         
         if let url = url {
@@ -30,9 +30,13 @@ struct DataService {
             
             // send the request
             do {
-                let (data, response) = try await session.data(for: request)
+                let (data, _) = try await session.data(for: request)
                
                 // parse the data
+                let decoder = JSONDecoder()
+                let playlist = try decoder.decode(Playlist.self, from: data)
+                
+                return playlist.items
             }
             catch {
                 print(error)
