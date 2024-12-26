@@ -13,9 +13,12 @@ struct FeedView: View {
     
     var body: some View {
         List(videos) { v in
-            Text(v.snippet?.title ?? "Title")
-            
+            VideoRowView(video: v)
+                .listRowSeparator(.hidden)
         }
+        .listStyle(.plain)
+        .scrollIndicators(.hidden)
+        
             .task{
                 self.videos = await DataService().getVideo()
               

@@ -11,11 +11,14 @@ struct HomeView: View {
     var body: some View {
         TabView {
             FeedView()
+                .tabItem{
+                    Image(systemName: "play.square.stack")
+                    Text("Feed")
+                    
+                    
+                }
         }
         .padding()
-        .onAppear(perform: {
-            print(Bundle.main.infoDictionary ?? ["API_KEY"] as? String ?? "cant find it")
-        })
        
     }
 }
