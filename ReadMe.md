@@ -21,6 +21,7 @@ Welcome to the **YouTube Clone App**! This project is my first step into iOS app
 
 3. **Scroll Feature**  
    Smooth scrolling through a list of videos.
+   
 
 ## Screenshots
 Screenshots for the app are stored in the following directory:
